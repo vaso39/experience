@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password">
+    <small>Your password is between 4 and 12 characters</small>
+
+    <label for="input-label">Input Text Label</label>
+    <div class="input-group">
+      <input type="text" id="input-label" class="error" placeholder="Typing">
+      <span class="error-icon"><img src="icon.png" alt="error-icon"></span>
+    </div>
+    <div class="error-message">Error message informing me of a problem</div>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox">
+        Remember me
+      </label>
+    </div>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="radio" value="1">
+        male
+      </label>
+      <label>
+        <input type="radio" name="radio" value="2" checked>
+        female
+      </label>
+      <label>
+        <input type="radio" name="radio" value="3">
+        other
+      </label>
+    </div>
+
+    <label for="dropdown">experience</label>
+    <select id="dropdown">
+      <option>Dropdown option</option>
+      <option>amateur</option>
+      <option>professional</option>
+    </select>
+
+    <div class="buttons">
+      <button class="cancel">Cancel</button>
+      <button class="next">Next</button>
+    </div>
+  </div>
+</body>
+</html>
